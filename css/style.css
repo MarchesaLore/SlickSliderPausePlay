@@ -15,13 +15,22 @@ background: url(/img/work-bk.png) no-repeat;
     opacity: 0;
     transition: opacity .25s linear;
 }
-
 .slick-slide{
- display: grid !important;
- grid-template-columns: 2fr 1fr;
- grid-gap:20px;
- height:auto !important;
+    display: grid !important;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:20px;
+    text-align: center;
+    height:auto !important;
 }
+@media only screen and (max-width: 600px) {    
+    .slick-slide{
+        grid-template-columns: 1fr;
+   }
+   .slick-slide> div{
+        margin:auto;
+    }
+}
+
 .slick-slide{
  padding:20px;
 }
